@@ -19,15 +19,15 @@ tapeFilm - android - приложение, цель которого облег�
 
  Вид при запуске приложения. Список фильмов. При нажатий фильмов открывается новое окно с описанием фильма.
  
-![]( https://github.com/Zhanarys27/tapeFilm/blob/master/main.PNG)
+![]( https://github.com/Zhanarys27/tapeFilm/blob/master/main1.PNG)
 
 Описание фильма. 
 
-![](https://github.com/Zhanarys27/tapeFilm/blob/master/infoFilm.PNG)
+![](https://github.com/Zhanarys27/tapeFilm/blob/master/infofilm1.PNG)
 
 Вид при нажатий раздвижной шторки, имеет три кнопки. При нажатий кнопки просмотренные открывается окно список просмотренных фильмов.
 
-![](https://github.com/Zhanarys27/tapeFilm/blob/master/shutterFilm.PNG)
+![](https://github.com/Zhanarys27/tapeFilm/blob/master/shutterFilm1.PNG)
 
 Просмотренные описания фильмов.
 
