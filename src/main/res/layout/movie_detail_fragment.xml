@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp"
+    android:background="@android:color/black"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.evanglazer.moviezone.MainActivity"
+    android:id="@+id/top">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="210dp"
+        android:id="@+id/movieView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/middle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailer 1"
+        android:id="@+id/trailer1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailer 2"
+        android:id="@+id/trailer2"
+        android:layout_below="@+id/trailer1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/releaseDateText"
+                android:padding="10dp"
+                android:layout_above="@+id/trailer1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="94dp"
+                android:textColor="#ffffff"
+            android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Release Date:"
+                android:id="@+id/releaseText"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/userText"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="UserBase Vote:"
+                android:id="@+id/userText"
+                android:padding="10dp"
+                android:layout_centerInParent="@+id/imdbText"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/releaseDateText"
+                android:layout_alignLeft="@+id/releaseText"
+                android:layout_alignStart="@+id/releaseText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="IMDB Rating:"
+                android:id="@+id/imdbText"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/imdbRatingText"
+                android:layout_alignLeft="@+id/userText"
+                android:layout_alignStart="@+id/userText" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/imdbRatingText"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:layout_above="@+id/userText"
+                android:layout_toRightOf="@+id/userText"
+                android:layout_toEndOf="@+id/userText" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/userRatingText"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/imdbRatingText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/description"
+            android:layout_below="@+id/trailer2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/releaseDateText"
+            android:layout_alignEnd="@+id/releaseDateText"
+            android:textColor="#ffffff" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.evanglazer.moviezone.fragments.NavBar"
+            android:id="@+id/fragment3"
+            android:layout_below="@+id/description"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:layout="@layout/nav_action_fragment" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>

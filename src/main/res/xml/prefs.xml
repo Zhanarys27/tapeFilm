@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference android:key="favorites"
+        android:id="@+id/favorites"
+        android:title="@string/fav_movies"
+        android:summary="@string/fav_movies_summary"
+        android:defaultValue="true"/>
+
+</PreferenceScreen>
